@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: poldrack/statsthinking21
+      - image: kai2019/statsthinking21
     steps:
       - add_ssh_keys:
           fingerprints:
@@ -28,7 +28,7 @@ jobs:
            command: |
              cd /tmp
              ssh-keyscan github.com >> ~/.ssh/known_hosts
-             git clone git@github.com:statsthinking21/statsthinking21-R-site.git
+             git clone git@github.com:sotnir/statsthinking21-R-site.git
              cd statsthinking21-R-site
              cp -r ~/project/_book/* . 
              git add .
