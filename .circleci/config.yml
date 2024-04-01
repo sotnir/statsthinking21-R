@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: kai2019/statsthinking21
+      - image: kai2019/statsthinking21-docker
     steps:
       - add_ssh_keys:
           fingerprints:
